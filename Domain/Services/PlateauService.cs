@@ -20,9 +20,7 @@ public static class PlateauService
         }
 
         foreach(var rover in plateau.Rovers)
-        {
-
-        }
+            rover.GetRoverPosition();
     }
 
     private static List<int> GetPlateauSpecs()
