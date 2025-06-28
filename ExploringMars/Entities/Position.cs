@@ -1,5 +1,4 @@
-﻿
-namespace ExploringMars.Entities;
+﻿namespace ExploringMars.Entities;
 
 public class Position
 {

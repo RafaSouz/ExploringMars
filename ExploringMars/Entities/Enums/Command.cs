@@ -1,6 +1,6 @@
 ﻿namespace ExploringMars.Entities.Enums;
 
-public enum Commands
+public enum Command
 {
     L,
     R,
