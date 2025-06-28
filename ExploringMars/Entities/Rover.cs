@@ -22,4 +22,9 @@ public class Rover
 
         return new Rover(x, y, direction, commands);
     }
+
+    public static void GetPosition(Rover rover)
+    {
+        Console.WriteLine($"{rover.Position.X} {rover.Position.Y} {rover.Direction.ToString()}");
+    }
 }
