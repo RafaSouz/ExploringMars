@@ -4,17 +4,17 @@ namespace Application.Helpers;
 
 public static class DirectionHelper
 {
-    public static Direction StringToCommand(char command)
+    public static Direction StringToCommand(string command)
     {
         switch (command)
         {
-            case 'N':
+            case "N":
                 return Direction.N;
-            case 'W':
+            case "W":
                 return Direction.W;
-            case 'S':
+            case "S":
                 return Direction.S;
-            case 'E':
+            case "E":
                 return Direction.E;
             default:
                 throw new ArgumentException("Direction not identified.");
