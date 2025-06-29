@@ -4,12 +4,14 @@ namespace ExploringMars.Entities;
 
 public class Rover
 {
+    public Guid RoverId { get; set; }
     public Position Position { get; set; }
     public Direction Direction { get; set; }
     public List<Command> Commands { get; set; }
 
     private Rover(int x, int y, Direction direction, List<Command> commands)
     {
+        RoverId = Guid.NewGuid();
         Commands = commands;
         Direction = Direction;
         Position = Position.Create(x, y);
