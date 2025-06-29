@@ -15,7 +15,7 @@ public static class CommandHelper
             case 'M':
                 return Command.M;
             default:
-                return Command.N;
+                throw new ArgumentException("Command not identified");
         }
     }
 }
